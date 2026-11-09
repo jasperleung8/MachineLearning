@@ -24,7 +24,7 @@ xTrain,xTest,yTrain,yTest = train_test_split(X,y,test_size=0.3,random_state=42)
 
 from sklearn.preprocessing import PolynomialFeatures
 
-poly = PolynomialFeatures(2)
+poly = PolynomialFeatures(3)
 xTrainPoly = poly.fit_transform(xTrain)
 xTestPoly = poly.fit_transform(xTest)
 
